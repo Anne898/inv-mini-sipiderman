@@ -63,33 +63,22 @@ $(document).ready(function() {
 document.addEventListener('DOMContentLoaded', function() {
   var video = document.querySelector('.embed-responsive-item');
   var botonDireccion = document.getElementById('boton-direccion');
-  var botonDireccion2 = document.getElementById('boton-direccion2');
-
   var botonAsistencia = document.getElementById('boton-asistencia');
 
   video.addEventListener('timeupdate', function() {
     var currentTime = video.currentTime;
 
-    if (currentTime >= 1 && currentTime <= 10) {
+    if (currentTime >= 25 && currentTime <= 32) {
       botonDireccion.style.display = 'block';
     } else {
       botonDireccion.style.display = 'none';
     }
 
-    if (currentTime >= 1 && currentTime <= 10) {
-      botonDireccion2.style.display = 'block';
-    } else {
-      botonDireccion2.style.display = 'none';
-    }
-
-    if (currentTime >= 11) {
+    if (currentTime >= 40) {
       botonAsistencia.style.display = 'block';
     } else {
       botonAsistencia.style.display = 'none';
     }
-
-
-
   });
 
   video.addEventListener('ended', function() {
@@ -110,32 +99,22 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="u-align-center u-left-0 u-uploaded-video u-video u-video-1">
           <div class="embed-responsive">
             <video class="embed-responsive-item" loop controls>
-              <source src="files/Inv.mp4" type="video/mp4">
+              <source src="files/merlina-1.mp4" type="video/mp4">
               <p>Your browser does not support HTML5 video.</p>
             </video>
             <button class="u-video-poster"></button>
           </div>
         </div>
 
-        <a id="boton-direccion" href="https://goo.gl/maps/x3wbvY2hLarP8igA9"
+        <a id="boton-direccion" href="https://maps.app.goo.gl/MzR4kuNyrUAPLAiR6"
           class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-32 u-custom-font u-font-georgia u-hover-custom-color-33 u-radius-50 u-btn-1">
           <span class="u-icon"><svg class="u-svg-content"
               viewBox="0 0 54.757 54.757" x="0px" y="0px"
               style="width: 1em; height: 1em;">
               <path
                 d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952 L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M27.557,26c-3.859,0-7-3.141-7-7s3.141-7,7-7s7,3.141,7,7 S31.416,26,27.557,26z"></path>
-            </svg></span>&nbsp;Misa
+            </svg></span>&nbsp;VER UBICACIÓN
         </a>
-
-        <a id="boton-direccion2" href="https://maps.app.goo.gl/MzR4kuNyrUAPLAiR6"
-        class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-32 u-custom-font u-font-georgia u-hover-custom-color-33 u-radius-50 u-btn-1">
-        <span class="u-icon"><svg class="u-svg-content"
-            viewBox="0 0 54.757 54.757" x="0px" y="0px"
-            style="width: 1em; height: 1em;">
-            <path
-              d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952 L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M27.557,26c-3.859,0-7-3.141-7-7s3.141-7,7-7s7,3.141,7,7 S31.416,26,27.557,26z"></path>
-          </svg></span>&nbsp;Fiesta
-      </a>
 
         <a id="boton-asistencia"
           href="https://maps.app.goo.gl/MzR4kuNyrUAPLAiR6"
